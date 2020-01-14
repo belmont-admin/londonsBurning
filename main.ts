@@ -7,6 +7,7 @@ function playTune () {
     }
     if (master == true) {
         channel += 1
+        radio.setGroup(channel)
         radio.sendString("play")
     }
     for (let index = 0; index < 2; index++) {
@@ -17,6 +18,7 @@ function playTune () {
     }
     if (master == true) {
         channel += 1
+        radio.setGroup(channel)
         radio.sendString("play")
     }
     for (let index = 0; index < 2; index++) {
@@ -26,6 +28,7 @@ function playTune () {
     }
     if (master == true) {
         channel += 1
+        radio.setGroup(channel)
         radio.sendString("play")
     }
     for (let index = 0; index < 2; index++) {
