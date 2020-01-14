@@ -46,14 +46,17 @@ input.onButtonPressed(Button.AB, function () {
 })
 input.onButtonPressed(Button.B, function () {
     channel += 1
+    basic.showNumber(channel)
     radio.setGroup(channel)
 })
 input.onButtonPressed(Button.A, function () {
     channel += -1
+    basic.showNumber(channel)
     radio.setGroup(channel)
 })
 let channel = 0
 let master = false
 master = false
 channel = 0
+basic.showNumber(channel)
 radio.setGroup(channel)
