@@ -37,6 +37,10 @@ function playTune () {
         music.playTone(440, music.beat(BeatFraction.Double))
         music.playTone(440, music.beat(BeatFraction.Double))
     }
+    if (master == true) {
+        channel = 0
+        radio.setGroup(channel)
+    }
 }
 radio.onReceivedString(function (receivedString) {
     playTune()
